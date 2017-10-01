@@ -8,11 +8,17 @@ public class Phone {
     String model;
     double weight;
 
+    Phone(long n, String m, double w) {
+        number = n;
+        model = m;
+        weight = w;
+    }
 
- void receiveCall (String name){
-     System.out.println("Звонит "+name);
- }
-    long getPhoneNumber (){
+    void receiveCall(String name) {
+        System.out.println("Звонит " + name);
+    }
+
+    long getPhoneNumber() {
         return number;
     }
 }
