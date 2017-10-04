@@ -25,7 +25,7 @@ public class PhoneDemo {
         //phonchik3.model ="Nokia";
         //phonchik3.weight =7;
         System.out.println("Телефон №3 имеет следующие параметры: " + phonchik3.number + " " + phonchik3.model + " " + phonchik3.weight);
-        phonchik1.receiveCall("Somebody");
+        phonchik1.receiveCall("Somebody call you",89899898989L);
         System.out.println(phonchik2.getPhoneNumber());
     }
 }
