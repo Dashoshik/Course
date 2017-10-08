@@ -13,8 +13,8 @@ public class Main {
         float average = 37.5f;
         double monthly = 1000.328;
         System.out.println("Now is a " + octal + " year!");
-        System.out.println(Bynar + Sym + " losses in " + year + " it's not a " + A);
-        System.out.println(K + " - it's " + A);
+       // System.out.println(Bynar + Sym + " losses in " + year + " it's not a " + A);
+       // System.out.println(K + " - it's " + A);
         System.out.println("just information: " + average + "; " + monthly);
 
     }

@@ -23,7 +23,7 @@ public class Circle {
 
     Circle(double r, double pi) {
         radius = r;
-        pi = pi;
+        this.pi = pi;
     }
 
     public static void main(String[] args) {
