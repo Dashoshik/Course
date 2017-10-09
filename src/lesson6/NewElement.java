@@ -1,4 +1,4 @@
-package Lesson6;
+package lesson6;
 
 /**
  * Создать массив типа double с размером 4.

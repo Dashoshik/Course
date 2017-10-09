@@ -1,4 +1,4 @@
-package Lesson5;
+package lesson5;
 /**Распечатать 10 строк: “Task1”. “Task2”. … “Task10”. Используем цикл while.
  */
 public class TaskWhile {

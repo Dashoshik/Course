@@ -1,6 +1,4 @@
-package Lesson7;
-
-import java.util.Arrays;
+package lesson7;
 
 /**
  * Изменить программу сортировки пузырьком:

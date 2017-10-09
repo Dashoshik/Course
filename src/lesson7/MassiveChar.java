@@ -1,4 +1,4 @@
-package Lesson7;
+package lesson7;
 
 /**
  * Создать двумерный массив типа char размером 4х2.

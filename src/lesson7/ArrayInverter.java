@@ -1,4 +1,4 @@
-package Lesson7;
+package lesson7;
 
 public class ArrayInverter {
     public static void invert(int[] array) {
