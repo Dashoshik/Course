@@ -25,6 +25,7 @@ public class PhoneDemo {
         System.out.println(phonchik2.getWeight());
         phonchik2.setWeight(6.5);
         System.out.println(phonchik2.getWeight());
+
     }
 
 }

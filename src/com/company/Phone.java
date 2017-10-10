@@ -7,6 +7,7 @@ public class Phone {
     private long number;
     private String model;
     private double weight;
+    private static int count = 0;
 
     Phone(long n, String m, double w) {
         this();
@@ -59,5 +60,14 @@ public class Phone {
         for (long num : array) {
             System.out.println("Message from " + num);
         }
+    }
+
+    public Phone(String model) {
+        this.model = model;
+        count++;
+    }
+
+    static int getCountPhone() {
+        return count;
     }
 }
