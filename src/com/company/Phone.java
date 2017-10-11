@@ -15,6 +15,15 @@ public class Phone {
         model = m;
         weight = w;
     }
+   public Phone() {
+        System.out.println("Описание телефона: ");
+       count++;
+    }
+
+    public Phone(String model) {
+        this.model = model;
+        count++;
+    }
 
     public long getNumber() {
         return number;
@@ -40,9 +49,7 @@ public class Phone {
         this.weight = weight;
     }
 
-    Phone() {
-        System.out.println("Описание телефона: ");
-    }
+
 
     void receiveCall(String name) {
         System.out.println("Звонит " + name);
@@ -62,12 +69,9 @@ public class Phone {
         }
     }
 
-    public Phone(String model) {
-        this.model = model;
-        count++;
-    }
 
-    static int getCountPhone() {
+
+   public static int getCountPhone() {
         return count;
     }
 }
