@@ -15,4 +15,7 @@ public class Student {
     }
     public Student(){}
 
+    public int getScholarship (){
+        return 150;
+    }
 }

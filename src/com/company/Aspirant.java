@@ -7,9 +7,11 @@ public class Aspirant extends Student {
     String scienceWork;
 
     public Aspirant(String firstName, String lastName, String group, String scienceWork) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.group = group;
+        super(firstName, lastName, group);
         this.scienceWork = scienceWork;
+
+    }
+    public int getScholarship (){
+        return 300;
     }
 }
