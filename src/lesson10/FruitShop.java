@@ -11,7 +11,7 @@ public class FruitShop {
         allFruits[2] = apricotBig;
 
         for (Fruit fruktik : allFruits) {
-            System.out.println(fruktik.printManufacturerInfo());
+            fruktik.printManufacturerInfo();
             System.out.println(fruktik.priceOfFruit());
         }
     }

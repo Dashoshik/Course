@@ -22,11 +22,11 @@ abstract public class Fruit {
     public Fruit() {
     }
 
-    public void printManufacturerInfo(String origin) {
+    public void printManufacturerInfo() {
         System.out.println("Made in Ukraine");
     }
 
-    public double priceOfFruit(double weight, double price) {
+    public double priceOfFruit() {
         //return double cost = this.weight * this.price;
         return 10.0;
     }
