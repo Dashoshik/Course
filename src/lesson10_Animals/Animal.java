@@ -20,7 +20,40 @@ public class Animal {
         this.location = location;
     }
 
+    public void setFood(String food) {
+        this.food = food;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getFood() {
+
+        return food;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
     public Animal() {
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Animal animal = (Animal) o;
+
+        return !(location != null ? !location.equals(animal.location) : animal.location != null);
+
+    }
+
+    @Override
+    public int hashCode() {
+        return location != null ? location.hashCode() : 0;
     }
 
     public void makeNoise() {

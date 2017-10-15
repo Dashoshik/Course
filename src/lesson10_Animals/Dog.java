@@ -9,6 +9,14 @@ public class Dog extends Animal {
 
     }
 
+    public String getSecurityGuard() {
+        return securityGuard;
+    }
+
+    public void setSecurityGuard(String securityGuard) {
+        this.securityGuard = securityGuard;
+    }
+
     public void makeNoise() {
         System.out.println("Гав");
     }

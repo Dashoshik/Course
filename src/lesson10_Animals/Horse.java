@@ -9,6 +9,14 @@ public class Horse extends Animal {
 
     }
 
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
     public void makeNoise() {
         System.out.println("стук копыт");
     }
