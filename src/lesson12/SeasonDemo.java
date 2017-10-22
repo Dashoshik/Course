@@ -7,13 +7,14 @@ public class SeasonDemo {
     public static void main(String[] args) {
         Seasons favourite = Seasons.SUMMER;
         Seasons[] allSeasons = Seasons.values();
-        System.out.println(favourite);
+        System.out.print(favourite + ", ");
         definitionOfFavouriteSeason(favourite);
         cycleSeasons(allSeasons);
         mySeason();
     }
 
     static public void definitionOfFavouriteSeason(Seasons favourite) {
+        System.out.println("average temperature is a " + favourite.getTempAverage());
         switch (favourite) {
 
             case WINTER: {
@@ -52,7 +53,8 @@ public class SeasonDemo {
     static public void cycleSeasons(Seasons[] allSeasons) {
         for (Seasons c : allSeasons) {
 
-            System.out.println(c);
+            System.out.println(c + " " + c.getTempAverage() + " " + c.getDescription());
+
 
         }
     }
