@@ -8,7 +8,8 @@ public class Pants extends Clothes implements WomanClothes, ManClothes {
     }
 
     @Override
-    public void toDressWoman() {System.out.println("Одеваю штаны на женщину");
+    public void toDressWoman() {
+        System.out.println("Одеваю штаны на женщину");
 
     }
 
