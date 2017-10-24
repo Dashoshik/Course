@@ -12,4 +12,20 @@ public class AtelierDemo {
             System.out.println(odezhda);
         }
     }
+
+    public static void toDressWoman(Clothes[] allTypeOfClothes) {
+        for (Clothes odezhda : allTypeOfClothes) {
+            if (odezhda instanceof WomanClothes) {
+                ((WomanClothes) odezhda).toDressWoman();
+            }
+        }
+    }
+
+    public static void toDressMan(Clothes[] allTypeOfClothes) {
+        for (Clothes odezhda : allTypeOfClothes) {
+            if (odezhda instanceof ManClothes) {
+                ((ManClothes) odezhda).toDressMan();
+            }
+        }
+    }
 }
