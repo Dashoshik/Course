@@ -20,12 +20,17 @@ public class Person {
     Person() {
     }
 
+    @Override
+    public String toString() {
+        return String.format("Person: fullName %s , age %d", fullName, age);//Переделать toString() для класса Person используя форматирование.
+    }
 
     public static void main(String[] args) {
         Person boy = new Person();
         Person girl = new Person("Kate", 30);
         boy.talk();
         girl.move();
+        System.out.println(girl);
     }
 }
 
