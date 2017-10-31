@@ -7,8 +7,8 @@ package lesson14.employeeTask;
  */
 public class Report {
     static void generateReport(Employee[] information) {
-        for (Employee array : information) {
-            System.out.println("Сведения о работнике: " + array);
+        for (Employee person : information) {
+            System.out.println("Сведения о работнике: " + person.getFullname() + ", " + person.getSalary());
         }
     }
 }
