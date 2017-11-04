@@ -49,14 +49,14 @@ public class Employee {
 
         Employee employee = (Employee) o;
 
-        if (salary != employee.salary) return false;
+        if (Float.compare(employee.salary, salary) != 0) return false;
         return fullname != null ? fullname.equals(employee.fullname) : employee.fullname == null;
     }
 
     @Override
     public int hashCode() {
         int result = fullname != null ? fullname.hashCode() : 0;
-        result = 31 * result + salary;
+        result = 31 * result + (salary != +0.0f ? Float.floatToIntBits(salary) : 0);
         return result;
     }
 }
