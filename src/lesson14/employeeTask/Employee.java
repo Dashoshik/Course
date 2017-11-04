@@ -11,9 +11,9 @@ package lesson14.employeeTask;
 
 public class Employee {
     private String fullname;
-    private int salary;
+    private float salary;
 
-    public Employee(String fullname, int salary) {
+    public Employee(String fullname, float salary) {
         this.fullname = fullname;
         this.salary = salary;
     }
@@ -22,8 +22,16 @@ public class Employee {
         return fullname;
     }
 
-    public int getSalary() {
+    public float getSalary() {
         return salary;
+    }
+
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
+    }
+
+    public void setSalary(float salary) {
+        this.salary = salary;
     }
 
     @Override
