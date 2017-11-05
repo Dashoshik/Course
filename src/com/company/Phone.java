@@ -9,20 +9,21 @@ public class Phone {
     private double weight;
     private static int count = 0;
 
-    Phone(long n, String m, double w) {
+    public Phone(long n, String m, double w) {
         this();
         number = n;
         model = m;
         weight = w;
     }
-   public Phone() {
+
+    public Phone() {
         System.out.println("Описание телефона: ");
-       count++;
+        count++;
     }
 
     public Phone(String model) {
+        this();
         this.model = model;
-        count++;
     }
 
     public long getNumber() {
@@ -49,8 +50,6 @@ public class Phone {
         this.weight = weight;
     }
 
-
-
     void receiveCall(String name) {
         System.out.println("Звонит " + name);
     }
@@ -69,9 +68,12 @@ public class Phone {
         }
     }
 
-
-
-   public static int getCountPhone() {
+    public static int getCountPhone() {
         return count;
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        count--;
     }
 }
