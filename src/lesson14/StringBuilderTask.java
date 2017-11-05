@@ -17,7 +17,6 @@ public class StringBuilderTask {
         StringBuilder text1 = new StringBuilder();
         StringBuilder text2 = new StringBuilder();
         StringBuilder text3 = new StringBuilder();
-
         text1.append(a).append("+").append(b).append("=").append(a + b);
         System.out.println(text1);
         text2.append(a).append("-").append(b).append("=").append(a - b);
@@ -27,7 +26,7 @@ public class StringBuilderTask {
         text3.insert(4, "равно ");
         text3.deleteCharAt(10);
         System.out.println(text3);
-        text2.replace(5,5," равно");
+        text2.replace(5, 5, " равно");
         text2.deleteCharAt(4);
         System.out.println(text2);
     }
