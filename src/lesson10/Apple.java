@@ -13,4 +13,11 @@ public class Apple extends Fruit {
     public double priceOfFruit() {
         return 15.0;
     }
+
+    @Override
+    public String toString() {
+        return "Apple{" +
+                "shape='" + shape + '\''+ "price = " + this.getPrice() + " weight = " + this.getWeight() + " " +
+                '}';
+    }
 }

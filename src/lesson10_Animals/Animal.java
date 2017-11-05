@@ -1,5 +1,7 @@
 package lesson10_Animals;
 
+import java.io.Serializable;
+
 /**
  * Создать класс Animal и расширяющие его классы Dog, Cat, Horse.
  * Класс Animal содержит переменные food, location и методы makeNoise, eat, sleep.
@@ -11,7 +13,7 @@ package lesson10_Animals;
  * В цикле отправляйте их на прием к ветеринару.
  */
 
-public class Animal {
+public class Animal implements Serializable {
     private String food;
     private String location;
 
