@@ -1,4 +1,8 @@
 package lesson3;
+/**
+ * Создать программу, которая будет выводить на экран меньшее по модулю из трёх введённых пользователем вещественных чисел.
+ * Для вычисления модуля используйте тернарную условную операцию.
+ */
 
 import java.util.Scanner;
 
@@ -9,18 +13,22 @@ public class Ternary {
         double a = 0.0, b = 0.0, c = 0.0;
         if (scan.hasNextDouble()) {
             a = scan.nextDouble();
+            a = a < 0 ? -a : a;
+        }
+        if (scan.hasNextDouble()) {
             b = scan.nextDouble();
+            b = b < 0 ? -b : b;
+        }
+        if (scan.hasNextDouble()) {
             c = scan.nextDouble();
-            double modulA = a < 0 ? -a : a;
-            double modulB = b < 0 ? -b : b;
-            double modulC = c < 0 ? -c : c;
-            if (modulA < modulB && modulA < modulC) {
-                System.out.println(modulA);
-            } else if (modulB < modulA && modulB < modulC) {
-                System.out.println(modulB);
-            } else {
-                System.out.println(modulC);
-            }
+            c = c < 0 ? -c : c;
+        }
+        if (a < b && a < c) {
+            System.out.println(a);
+        } else if (b < a && b < c) {
+            System.out.println(b);
+        } else {
+            System.out.println(c);
         }
     }
 }
