@@ -3,7 +3,7 @@ package types;
 public class Main {
 
     public static void main(String[] args) {
-        byte i = 2,  z =3;
+        byte i = 2, z = 3;
         int b = i + 2;
         z *= 2;
         System.out.println(b + z);
@@ -14,24 +14,25 @@ public class Main {
         byte pp = (byte) o;
         System.out.println(pp);
         byte kk = 3;
-        long rr = 3*2;
+        long rr = 3 * 2;
         System.out.println(rr);
-        byte u=14;
+        byte u = 14;
         float uu = u;
         System.out.println(uu);
-        byte c =5;
-        double c2 = c*0.33;
+        byte c = 5;
+        double c2 = c * 0.33;
         System.out.println(c2);
         byte g = -31;
-        char gg = (char)g;
+        char gg = (char) g;
         System.out.println(gg);
     }
+
     public static void second(String[] args) {
         long ar = 987;
-        byte ar2 = (byte)(ar-87);
+        byte ar2 = (byte) (ar - 87);
         System.out.println(ar2);
         long art = 78;
-        art *=2;
+        art *= 2;
         System.out.println(art);
     }
 }
