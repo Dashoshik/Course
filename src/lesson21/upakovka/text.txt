@@ -1,0 +1,3 @@
+Задание
+Написать класс, который копирует содержимое из одного файла в другой.
+Используем классы BufferedReader, FileReader, BufferedWriter , FileWriter.
