@@ -7,7 +7,8 @@ package lesson19.exceptionTask;
  * второй принимает сообщение исключения и
  * передает его в конструктор класса Exception.
  */
-public class WrongLoginException extends Exception {
+public class
+WrongLoginException extends Exception {
     private String login;
 
     public WrongLoginException() {
@@ -16,6 +17,6 @@ public class WrongLoginException extends Exception {
     public WrongLoginException(String login, String message) {
 
         super(message);
-        this.login = message;
+        this.login = login;
     }
 }

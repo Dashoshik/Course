@@ -1,5 +1,6 @@
 package lesson17.box;
 
+import java.util.Set;
 import java.util.TreeSet;
 
 /**
@@ -7,7 +8,7 @@ import java.util.TreeSet;
  */
 public class TreeSetDemo {
     public static void main(String[] args) {
-        TreeSet<HeavyBox> boxSet = new TreeSet<>();
+        Set<HeavyBox> boxSet = new TreeSet<>();
         boxSet.add(new HeavyBox(2, 8, 6, 10));
         boxSet.add(new HeavyBox(4, 9, 2, 12));
         boxSet.add(new HeavyBox(6, 5, 7, 10));
