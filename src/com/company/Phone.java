@@ -50,11 +50,11 @@ public class Phone {
         this.weight = weight;
     }
 
-    void receiveCall(String name) {
+    public void receiveCall(String name) {
         System.out.println("Звонит " + name);
     }
 
-    void receiveCall(String f, long b) {
+    public void receiveCall(String f, long b) {
         System.out.println("Звонит " + f + ",номер: " + b);
     }
 
@@ -62,7 +62,7 @@ public class Phone {
         return number;
     }
 
-    void sendMessage(long... array) {
+    public void sendMessage(long... array) {
         for (long num : array) {
             System.out.println("Message from " + num);
         }
