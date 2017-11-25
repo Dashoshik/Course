@@ -13,7 +13,7 @@ public class Metainformation {
     }
 
     private static void info(Class arrayClass) {
-        System.out.println("Class name "+arrayClass.getName());
+        System.out.println("Class name " + arrayClass.getName());
         System.out.println("Is Array? " + arrayClass.isArray());
         System.out.println("Is Interface? " + arrayClass.isInterface());
         System.out.println("Is Primitive? " + arrayClass.isPrimitive());

@@ -7,11 +7,6 @@ public class QueryStatic {
     private static String login;
     private static String password;
 
-    public QueryStatic(String login, String password) {
-        this.login = login;
-        this.password = password;
-    }
-
     static class Query {
         public void printToLog() {
             System.out.println("Пользователь с логином" + login + password + "отправил запрос");
