@@ -19,7 +19,7 @@ public class QueryStatic {
     }
 
     public static void main(String[] args) {
-        QueryStatic user1 = new QueryStatic("Darya", "123");
+        QueryStatic user1 = new QueryStatic();
         Query query1 = new QueryStatic.Query();
 
         user1.createQuery();

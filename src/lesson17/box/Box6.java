@@ -5,6 +5,8 @@ package lesson17.box;
  */
 public class Box6 {
     double width;
+    double height;
+    double depth;
 
     public double getWidth() {
         return width;
@@ -30,9 +32,6 @@ public class Box6 {
         this.depth = depth;
     }
 
-    double height;
-    double depth;
-
     // constructor used when all dimensions specified
     Box6(double w, double h, double d) {
         width = w;
@@ -53,7 +52,6 @@ public class Box6 {
     }
 
     // compute and return volume
-
     double volume() {
         return width * height * depth;
     }
