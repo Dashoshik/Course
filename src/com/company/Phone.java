@@ -58,7 +58,7 @@ public class Phone {
         System.out.println("Звонит " + f + ",номер: " + b);
     }
 
-    long getPhoneNumber() {
+    public long getPhoneNumber() {
         return number;
     }
 
