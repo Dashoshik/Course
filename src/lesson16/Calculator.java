@@ -23,6 +23,6 @@ public class Calculator {
         System.out.println(sum(10, 15.5));
         System.out.println(divide(2, 12.2));
         System.out.println(subtraction(5, 1));
-        System.out.println(multiply(2, 2.5));
+        System.out.println (multiply(2, 2.5));
     }
 }

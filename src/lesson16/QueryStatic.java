@@ -4,8 +4,8 @@ package lesson16;
  * Переписать класс Query используя статический класс.
  */
 public class QueryStatic {
-    private static String login;
-    private static String password;
+    private static String login = "someLogin";
+    private static String password = "somePassword";
 
     static class Query {
         public void printToLog() {
