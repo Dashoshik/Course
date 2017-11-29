@@ -1,0 +1,27 @@
+CREATE TABLE `phones` (
+	`phone_id` INT(5) NOT NULL AUTO_INCREMENT,
+	`user_id` INT(5) NULL DEFAULT NULL,
+	`phone_number` CHAR(10) NULL DEFAULT NULL,
+	PRIMARY KEY (`phone_id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=9
+;
+
+
+CREATE TABLE `users` (
+	`id` INT(5) NOT NULL AUTO_INCREMENT,
+	`username` VARCHAR(50) NULL DEFAULT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=5
+;
+
+
+select * from phones where phone_number like '%0' order by phone_number DESC;
+
+use new_by_dasha;
+select * from phones where phone_id>2 AND user_id>1 ;
